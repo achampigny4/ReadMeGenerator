@@ -9,6 +9,16 @@ function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
+            message: "What is your Github user name?",
+            name: "userName"
+        },
+        {
+            type: "input",
+            message: "What is your email address?",
+            name: "email"
+        },
+        {
+            type: "input",
             message: "What is your project's name?",
             name: "title"
         },
@@ -27,11 +37,6 @@ function promptUser() {
             message: "Description of your project: ",
             name: "description"
         },
-        // {
-        //     type: "input",
-        //     message: "Table of Contents: ",
-        //     name: "tableContents"
-        // },
         {
             type: "input",
             message: "What does your project provide for user's?",
@@ -53,14 +58,9 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "Who contributed to the project? ",
-            name: "contributors"
+            message: "What are the guilines for a user who wants to contribute? ",
+            name: "contribution"
         },
-        // {
-        //     type: "input",
-        //     message: "Questions for developer: ",
-        //     name: "questions"
-        // },
     ])
 };
 
@@ -68,11 +68,62 @@ function promptUser() {
 // function to write README file
 // function writeToFile(fileName, data) {
 function writeToFile(data) {
-    return `THIS IS A TEMP> PLACE MD TEMPLATE HERE< 
-    ${data.title} ${data.license} ${data.description}`;
+    return ` 
+    # ${data.title}
+
+    $ {data.license} BADGE GOES HERE
+
+    ##Description
+
+    ${data.description}
+
+    ##Table of Contents:
+
+    *[Description](#description)
+    *[Usage](#usage)
+    *[License](#license)
+    *[Installation](#installation)
+    *[Test](#test)
+    *[Contribution](#contribution)
+    *[Questions](#questions)
+
+    ##Application use:
+
+    ${data.usage}
+
+    ##License:
+
+    ${data.license}
+
+    ##Installation:
+
+    \`
+    ${data.installation}
+    \`
+
+    ##Test:
+
+    \`
+    ${data.test}
+    \`
+
+    ##Contribution:
+
+    Guidlines to contribute:
+
+    ${data.contribution}
+
+    ##Questions:
+
+    Please contact me if you have any questions.
+    email: ${data.email}
+    github: ${data.userName}
+
+    `;
 };
 
 const init = async () => {
+    console.log("README Generator \nTo create a README.md file for your project, \nplease answer the following questions:")
     try {
         const data = await promptUser();
         const md = writeToFile(data);
@@ -85,7 +136,3 @@ const init = async () => {
 
 // function call to initialize program
 init();
-
-//1. create md file template
-//2. answers will save generateReadMe.md and apply file template
-//3.
