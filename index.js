@@ -5,13 +5,12 @@ const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
-// const questions = inquirer.prompt([
 function promptUser() {
     return inquirer.prompt([
         {
             type: "input",
             message: "What is your project's name?",
-            name: "project"
+            name: "title"
         },
         {
             type: "list",
@@ -70,24 +69,23 @@ function promptUser() {
 // function writeToFile(fileName, data) {
 function writeToFile(data) {
     return `THIS IS A TEMP> PLACE MD TEMPLATE HERE< 
-    ${data.project} ${data.license} ${data.description}`;
-}
+    ${data.title} ${data.license} ${data.description}`;
+};
 
 const init = async () => {
     try {
         const data = await promptUser();
         const md = writeToFile(data);
-        await writeFileAsync("readMe.md", md);
-        console.log("ReadMe.md file successfully created!");
-
+        await writeFileAsync(`./utils/${data.title}README.md`, md);
+        console.log("README file successfully created!");
     } catch (err) {
         console.log(err);
     };
 };
 
-// function to initialize program
-// function init() {
-// }
-
 // function call to initialize program
 init();
+
+//1. create md file template
+//2. answers will save generateReadMe.md and apply file template
+//3.
