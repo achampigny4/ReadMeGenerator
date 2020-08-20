@@ -68,66 +68,67 @@ function promptUser() {
 // function to write README file
 // function writeToFile(fileName, data) {
 function writeToFile(data) {
-    return ` 
-    # ${data.title}
+    return `# ${data.title}
 
-    $ {data.license} BADGE GOES HERE
+$ {data.license} BADGE GOES HERE
 
-    ##Description
+## Description
 
-    ${data.description}
+${data.description}
 
-    ##Table of Contents:
+## Table of Contents:
 
-    *[Description](#description)
-    *[Usage](#usage)
-    *[License](#license)
-    *[Installation](#installation)
-    *[Test](#test)
-    *[Contribution](#contribution)
-    *[Questions](#questions)
+*[Description](#description)
+*[Usage](#usage)
+*[License](#license)
+*[Installation](#installation)
+*[Test](#test)
+*[Contribution](#contribution)
+*[Questions](#questions)
 
-    ##Application use:
+## Application use:
 
-    ${data.usage}
+${data.usage}
 
-    ##License:
+## License:
 
-    ${data.license}
+${data.license}
 
-    ##Installation:
+## Installation:
 
-    \`
-    ${data.installation}
-    \`
+${data.installation}
 
-    ##Test:
+## Test:
 
-    \`
-    ${data.test}
-    \`
+${data.test}
 
-    ##Contribution:
+## Contribution:
 
-    Guidlines to contribute:
+Guidlines to contribute:
 
-    ${data.contribution}
+${data.contribution}
 
-    ##Questions:
+## Questions:
 
-    Please contact me if you have any questions.
-    email: ${data.email}
-    github: ${data.userName}
+Please contact me if you have any questions.
+email: ${data.email}
+github: ${data.userName}
 
     `;
 };
 
+//init function
 const init = async () => {
+    //this message is displayed when the user begins
     console.log("README Generator \nTo create a README.md file for your project, \nplease answer the following questions:")
     try {
+        //user is asked and answered all questions
         const data = await promptUser();
+        //data to be put in the markdown
         const md = writeToFile(data);
+        //create new file with the data from the users answers 
         await writeFileAsync(`./utils/${data.title}README.md`, md);
+        //this message is displayed when the user is finished
         console.log("README file successfully created!");
     } catch (err) {
         console.log(err);
