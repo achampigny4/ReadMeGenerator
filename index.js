@@ -1,7 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-
+const path = require("path"); //TODO path to generateMardown.js
+const generateMarkdown = require("./utils/generateMarkdown");
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -64,60 +65,64 @@ function promptUser() {
     ])
 };
 
+//template
+// // function writeToFile(data) {
+// //     return `# ${data.title}
 
-// function to write README file
-// function writeToFile(fileName, data) {
-function writeToFile(data) {
-    return `# ${data.title}
+// // ---
 
-$ {data.license} BADGE GOES HERE
+// // $ {data.license} BADGE GOES HERE
 
-## Description
+// // ## Description
 
-${data.description}
+// // ---
 
-## Table of Contents:
+// // ${data.description}
 
-*[Description](#description)
-*[Usage](#usage)
-*[License](#license)
-*[Installation](#installation)
-*[Test](#test)
-*[Contribution](#contribution)
-*[Questions](#questions)
+// // ## Table of Contents:
 
-## Application use:
+// // *[Description](#description)
+// // *[Usage](#usage)
+// // *[License](#license)
+// // *[Installation](#installation)
+// // *[Test](#test)
+// // *[Contribution](#contribution)
+// // *[Questions](#questions)
 
-${data.usage}
+// // ---
 
-## License:
+// // ## Application use:
 
-${data.license}
+// // ${data.usage}
 
-## Installation:
+// // ## License:
 
-${data.installation}
+// // ${data.license}
 
-## Test:
+// // ## Installation:
 
-${data.test}
+// // ${data.installation}
 
-## Contribution:
+// // ## Test:
 
-Guidlines to contribute:
+// // ${data.test}
 
-${data.contribution}
+// // ## Contribution:
 
-## Questions:
+// // Guidlines to contribute:
 
-Please contact me if you have any questions.
-email: ${data.email}
-github: ${data.userName}
+// // ${data.contribution}
 
-    `;
-};
+// // ## Questions:
 
-//init function
+// // Please contact me if you have any questions.
+// // email: ${data.email}
+// // github: [${data.userName}](www.github.com/${data.userName})
+
+// //     `;
+// };
+
+//init function. async activates await
 const init = async () => {
     //this message is displayed when the user begins
     console.log("README Generator \nTo create a README.md file for your project, \nplease answer the following questions:")
@@ -125,9 +130,9 @@ const init = async () => {
         //user is asked and answered all questions
         const data = await promptUser();
         //data to be put in the markdown
-        const md = writeToFile(data);
+        const md = writeToFile(data); //TODO: The "path" argument must be of type string. Received an instance of Object
         //create new file with the data from the users answers 
-        await writeFileAsync(`./utils/${data.title}README.md`, md);
+        await writeFileAsync(`./utils/README.md`, generateMarkdown(md)); //TODO
         //this message is displayed when the user is finished
         console.log("README file successfully created!");
     } catch (err) {
@@ -137,3 +142,17 @@ const init = async () => {
 
 // function call to initialize program
 init();
+
+// function to write README file to template on generateMarkdown.js file
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data); //TODO
+};
+
+
+//1. move file template to generateMarkdown.js which was provided for the hw (TODO)
+//2. perfect md file template
+//      - license
+//      - badges
+//      - test read me template on github
+//      - review readme's on git hub to ensure proper content and
+//3. review hw requirments
