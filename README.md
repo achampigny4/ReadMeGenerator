@@ -1,15 +1,31 @@
 # ReadMeGenerator
+
+## Badge here
+
+## Description
+
+```
+
+User's can quickly create a README markdown file using the command prompts.
+
+<img src="screenshot of the command prompt questions"/>
+
+```
+
 ## User Story
 
 ```
+
 AS A developer
 I WANT a README generator
 SO THAT can quickly create a professional README for a new project
+
 ```
 
 ## Acceptance Criteria
 
-```md
+```
+
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for information about my application repository
 THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
@@ -25,4 +41,21 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
 ```
+
+## Video Demo
+
+```
+
+<img src="video recoded here"/>
+
+```
+
+## Resources
+
+```
+npm iquirer
+badge source
+license source
+sites used for research
