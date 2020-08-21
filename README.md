@@ -12,6 +12,28 @@ User's can quickly create a README markdown file using the command prompts.
 
 ```
 
+## Table of Contents
+
+example:
+* [Team Members](#team-members)
+
+# <a name="team-members"></a>Team Members
+
+
+
+* [Description](Description)
+
+* [User Story](User Story)
+
+* [Acceptance Criteria](Acceptance Criteria)
+
+* [Video Demo](Video Demo)
+
+* [Resources](Resources
+
+* [Contact Developer](Contact Developer)
+
+
 ## User Story
 
 ```
@@ -59,3 +81,13 @@ npm iquirer
 badge source
 license source
 sites used for research
+
+```
+
+## Contact Developer
+
+ReadMe Generator was developed by Alissa Champigny
+
+*[Email Address](achampigny4@gmail.com)
+
+*[Github Profile](https://github.com/achampigny4)
