@@ -1,6 +1,6 @@
 # ReadMeGenerator
 
-## Badge here
+#### Badge here
 
 ## Description
 
@@ -25,7 +25,7 @@ User's can quickly create a README markdown file using the command prompts.
 * [Contact Developer](##contact-developer)
 
 
-## <a name="user-story"></a>User Story
+## User Story
 
 ```
 
@@ -35,7 +35,7 @@ SO THAT can quickly create a professional README for a new project
 
 ```
 
-## <a name="acceptance-criteria"></a>Acceptance Criteria
+## Acceptance Criteria
 
 ```
 
@@ -57,7 +57,7 @@ THEN I am taken to the corresponding section of the README
 
 ```
 
-## <a name="video-demo"></a>Video Demo
+## Video Demo
 
 ```
 
@@ -65,7 +65,7 @@ THEN I am taken to the corresponding section of the README
 
 ```
 
-## <a name="resources"></a>Resources
+## Resources
 
 ```
 npm iquirer
@@ -75,7 +75,7 @@ sites used for research
 
 ```
 
-## <a name="contact-developer"></a>Contact Developer
+## Contact Developer
 
 ReadMe Generator was developed by Alissa Champigny
 
