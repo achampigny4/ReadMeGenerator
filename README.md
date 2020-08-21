@@ -14,27 +14,18 @@ User's can quickly create a README markdown file using the command prompts.
 
 ## Table of Contents
 
-example:
-* [Team Members](#team-members)
+* [User Story](##user-story)
 
-# <a name="team-members"></a>Team Members
+* [Acceptance Criteria](##acceptance-criteria)
 
+* [Video Demo](##video-demo)
 
+* [Resources](##resources)
 
-* [Description](Description)
-
-* [User Story](User Story)
-
-* [Acceptance Criteria](Acceptance Criteria)
-
-* [Video Demo](Video Demo)
-
-* [Resources](Resources
-
-* [Contact Developer](Contact Developer)
+* [Contact Developer](##contact-developer)
 
 
-## User Story
+## <a name="user-story"></a>User Story
 
 ```
 
@@ -44,7 +35,7 @@ SO THAT can quickly create a professional README for a new project
 
 ```
 
-## Acceptance Criteria
+## <a name="acceptance-criteria"></a>Acceptance Criteria
 
 ```
 
@@ -66,7 +57,7 @@ THEN I am taken to the corresponding section of the README
 
 ```
 
-## Video Demo
+## <a name="video-demo"></a>Video Demo
 
 ```
 
@@ -74,7 +65,7 @@ THEN I am taken to the corresponding section of the README
 
 ```
 
-## Resources
+## <a name="resources"></a>Resources
 
 ```
 npm iquirer
@@ -84,7 +75,7 @@ sites used for research
 
 ```
 
-## Contact Developer
+## <a name="contact-developer"></a>Contact Developer
 
 ReadMe Generator was developed by Alissa Champigny
 
