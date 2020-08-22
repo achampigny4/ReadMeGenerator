@@ -1,8 +1,8 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const path = require("path"); //TODO path to generateMardown.js
 const generateMarkdown = require("./utils/generateMarkdown");
+
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -62,65 +62,8 @@ function promptUser() {
             message: "What are the guilines for a user who wants to contribute? ",
             name: "contribution"
         },
-    ])
+    ]);
 };
-
-//template
-// // function writeToFile(data) {
-// //     return `# ${data.title}
-
-// // ---
-
-// // $ {data.license} BADGE GOES HERE
-
-// // ## Description
-
-// // ---
-
-// // ${data.description}
-
-// // ## Table of Contents:
-
-// // *[Description](#description)
-// // *[Usage](#usage)
-// // *[License](#license)
-// // *[Installation](#installation)
-// // *[Test](#test)
-// // *[Contribution](#contribution)
-// // *[Questions](#questions)
-
-// // ---
-
-// // ## Application use:
-
-// // ${data.usage}
-
-// // ## License:
-
-// // ${data.license}
-
-// // ## Installation:
-
-// // ${data.installation}
-
-// // ## Test:
-
-// // ${data.test}
-
-// // ## Contribution:
-
-// // Guidlines to contribute:
-
-// // ${data.contribution}
-
-// // ## Questions:
-
-// // Please contact me if you have any questions.
-// // email: ${data.email}
-// // github: [${data.userName}](www.github.com/${data.userName})
-
-// //     `;
-// };
 
 //init function. async activates await
 const init = async () => {
@@ -130,11 +73,11 @@ const init = async () => {
         //user is asked and answered all questions
         const data = await promptUser();
         //data to be put in the markdown
-        const md = writeToFile(data); //TODO: The "path" argument must be of type string. Received an instance of Object
+        const md = generateMarkdown(data); 
         //create new file with the data from the users answers 
-        await writeFileAsync(`./utils/README.md`, generateMarkdown(md)); //TODO
+        await writeFileAsync(`./output/README.md`, md);
         //this message is displayed when the user is finished
-        console.log("README file successfully created!");
+        console.log("README file successfully created in the OUTPUT folder!");
     } catch (err) {
         console.log(err);
     };
@@ -143,13 +86,6 @@ const init = async () => {
 // function call to initialize program
 init();
 
-// function to write README file to template on generateMarkdown.js file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data); //TODO
-};
-
-
-//1. move file template to generateMarkdown.js which was provided for the hw (TODO)
 //2. perfect md file template
 //      - license
 //      - badges
