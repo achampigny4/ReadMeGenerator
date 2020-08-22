@@ -25,12 +25,12 @@ function promptUser() {
         },
         {
             type: "list",
-            message: "What licensing does your preject require? ",
+            message: "What licensing does your project require? ",
             name: "license",
             choices: [
                 "MIT",
-                "",
-                "",
+                "GNU",
+                "ISC",
             ]
         },
         {
@@ -40,7 +40,7 @@ function promptUser() {
         },
         {
             type: "input",
-            message: "What does your project provide for user's?",
+            message: "This application is used to:",
             name: "usage"
         },
         {
@@ -86,9 +86,6 @@ const init = async () => {
 // function call to initialize program
 init();
 
-//2. perfect md file template
-//      - license
-//      - badges
-//      - test read me template on github
-//      - review readme's on git hub to ensure proper content and
+//1. license render
+//2. badges render
 //3. review hw requirments
