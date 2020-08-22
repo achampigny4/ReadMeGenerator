@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alissa Champigny",
+  "license": "MIT",
+  "homepage": "https://github.com/achampigny4/ReadMeGenerator",
   "dependencies": {
     "inquirer": "^6.3.1"
   }
