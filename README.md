@@ -8,7 +8,7 @@
 
 User's can quickly create a README markdown file using the command prompts.
 
-<img src="" alt"command prompt screen shot"/>
+<img src="assets/commandprompt.png" alt"command prompt screen shot"/>
 
 ```
 
