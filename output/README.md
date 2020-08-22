@@ -4,52 +4,40 @@
   
   ## Description
   
-  ---
-  
   
   
   ## Table of Contents:
+ 
+  * [Description](##Description)
 
-  ---
-  
-  *[Description](##Description)
+  * [Application Use](##usage)
 
-  *[Application Use](##usage)
+  * [Installation](##Installation)
 
-  *[Installation](##Installation)
+  * [Test](##Test)
 
-  *[Test](##Test)
+  * [License](##License)
 
-  *[License](##License)
+  * [Contribute](##Contribute)
 
-  *[Contribute](##Contribute)
-
-  *[Contact Developer](##Questions)
+  * [Contact Developer](##Questions)
   
   ## Usage:
 
-  ---
-  
   
 
   ## Installation:
-
-  ---
 
   How to install:
   
   npm i
   
   ## License:
-
-  ---
   
   [MIT](https://opensource.org/licenses/MIT)
 
   
   ## Test:
-
-  ---
 
   How to test application:
 
@@ -57,16 +45,12 @@
   
   ## Contribution:
 
-  ---
-  
   Guidlines to contribute:
 
   
 
   ## Questions:
 
-  ---
-  
   Please contact me if you have any questions.
  
   email: 

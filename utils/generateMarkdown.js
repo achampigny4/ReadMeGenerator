@@ -7,52 +7,40 @@ function generateMarkdown(data) {
   
   ## Description
   
-  ---
-  
   ${data.description}
   
   ## Table of Contents:
+ 
+  * [Description](##Description)
 
-  ---
-  
-  *[Description](##Description)
+  * [Application Use](##usage)
 
-  *[Application Use](##usage)
+  * [Installation](##Installation)
 
-  *[Installation](##Installation)
+  * [Test](##Test)
 
-  *[Test](##Test)
+  * [License](##License)
 
-  *[License](##License)
+  * [Contribute](##Contribute)
 
-  *[Contribute](##Contribute)
-
-  *[Contact Developer](##Questions)
+  * [Contact Developer](##Questions)
   
   ## Usage:
 
-  ---
-  
   ${data.usage}
 
   ## Installation:
-
-  ---
 
   How to install:
   
   ${data.installation}
   
   ## License:
-
-  ---
   
   [${data.license}](https://opensource.org/licenses/${data.license})
 
   
   ## Test:
-
-  ---
 
   How to test application:
 
@@ -60,16 +48,12 @@ function generateMarkdown(data) {
   
   ## Contribution:
 
-  ---
-  
   Guidlines to contribute:
 
   ${data.contribution}
 
   ## Questions:
 
-  ---
-  
   Please contact me if you have any questions.
  
   email: ${data.email}
