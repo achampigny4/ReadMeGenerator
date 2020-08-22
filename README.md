@@ -59,15 +59,10 @@ THEN I am taken to the corresponding section of the README
 
 ## Video Demo
 
-```
-
-<img src="video recoded here"/>
-
-```
+<img src="" alt="video recoded here"/>
 
 ## License
 
-```
 [MIT](https://opensource.org/licenses/MIT)
 License
 
@@ -91,11 +86,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-```
 
 ## Resources
-
-```
 
 [npm iquirer](https://www.npmjs.com/package/inquirer)
 
@@ -104,10 +96,6 @@ SOFTWARE.
 [License Source](https://choosealicense.com/licenses/mit/)
 
 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
-
-
-
-```
 
 ## Contact Developer
 
