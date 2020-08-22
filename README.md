@@ -8,7 +8,7 @@
 
 User's can quickly create a README markdown file using the command prompts.
 
-<img src="screenshot of the command prompt questions"/>
+<img src="" alt"command prompt screen shot"/>
 
 ```
 
@@ -68,7 +68,8 @@ THEN I am taken to the corresponding section of the README
 ## License
 
 ```
-MIT License
+[MIT](https://opensource.org/licenses/MIT)
+License
 
 Copyright (c) 2020 Alissa Champigny
 
@@ -96,13 +97,15 @@ SOFTWARE.
 
 ```
 
-npm iquirer
+[npm iquirer](https://www.npmjs.com/package/inquirer)
 
-badge source
+[badge source](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba#apache-20-license)
 
 [License Source](https://choosealicense.com/licenses/mit/)
 
-sites used for research
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+
 
 ```
 
