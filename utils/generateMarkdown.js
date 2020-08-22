@@ -3,7 +3,7 @@
 function generateMarkdown(data) {
   return `# ${data.title}
   
-  $ { renderLicenseBadge(data.license) }
+  [![${data.license}](https://img.shields.io/badge/License-${data.license}-green.svg)](https://opensource.org/licenses/${data.license})
   
   ## Description
   
@@ -47,8 +47,8 @@ function generateMarkdown(data) {
 
   ---
   
-  $ { renderLicense(data.license) }
-  [License Source](https://choosealicense.com/licenses/mit/)
+  [${data.license}](https://opensource.org/licenses/${data.license})
+
   
   ## Test:
 
