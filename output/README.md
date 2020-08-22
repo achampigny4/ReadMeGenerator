@@ -1,10 +1,10 @@
-# 
+# ReadMeGenerator
   
   [![MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
   
   ## Description
   
-  
+  help user's quickly create README.md files
   
   ## Table of Contents:
  
@@ -24,7 +24,7 @@
   
   ## Usage:
 
-  
+  generate applications README.md
 
   ## Installation:
 
@@ -47,14 +47,14 @@
 
   Guidlines to contribute:
 
-  
+  ask
 
   ## Questions:
 
   Please contact me if you have any questions.
  
-  email: 
+  email: achampigny4@gmail.com
   
-  github: [](www.github.com/)
+  github: [achampigny4](www.github.com/achampigny4)
   
       
