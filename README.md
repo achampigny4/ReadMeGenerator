@@ -61,7 +61,9 @@ THEN I am taken to the corresponding section of the README
 
 ## Video Demo
 
-<img src="" alt="video recoded here"/>
+[Youtube](https://www.youtube.com/watch?v=g3ii2wMfKw0)
+
+<img src="assets\ReadMeGenerator.webm" alt="video recoded here"/>
 
 ## Installation
 
