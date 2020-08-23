@@ -14,15 +14,17 @@ User's can quickly create a README markdown file using the command prompts.
 
 ## Table of Contents
 
-* [User Story](##user-story)
+* [User Story](##User-Story)
 
-* [Acceptance Criteria](##acceptance-criteria)
+* [Acceptance Criteria](##Acceptance-Criteria)
 
-* [Video Demo](##video-demo)
+* [Video Demo](##Video-Demo)
 
-* [Resources](##resources)
+* [Installaion](##Installation)
 
-* [Contact Developer](##contact-developer)
+* [Resources](##Resources)
+
+* [Contact Developer](##Contact-Developer)
 
 
 ## User Story
@@ -61,31 +63,20 @@ THEN I am taken to the corresponding section of the README
 
 <img src="" alt="video recoded here"/>
 
+## Installation
+
+To install ReadMeGenerator dependencies run the following command: 
+
+**npm i**
+
+To use ReadMeGenerator run the following command in the terminal:
+
+**node index.js**
+
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
-License
-
+**[MIT](https://opensource.org/licenses/MIT) License**
 Copyright (c) 2020 Alissa Champigny
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 
 ## Resources
 
