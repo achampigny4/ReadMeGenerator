@@ -1,6 +1,6 @@
-//markdown file template for user's input
 // function to generate markdown for README
 function generateMarkdown(data) {
+  //markdown file template for user's input
   return `# ${data.title}
   
   [![${data.license}](https://img.shields.io/badge/License-${data.license}-green.svg)](https://opensource.org/licenses/${data.license})
@@ -61,6 +61,6 @@ function generateMarkdown(data) {
   github: [${data.userName}](www.github.com/${data.userName})
   
       `;
-}
+};
 
 module.exports = generateMarkdown;
