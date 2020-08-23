@@ -63,7 +63,7 @@ THEN I am taken to the corresponding section of the README
 
 [Youtube](https://www.youtube.com/watch?v=g3ii2wMfKw0)
 
-<iframe src="https://drive.google.com/file/d/1FOggqcFIuZkLM75qBueaAlW3i_NjGPQy/preview" width="640" height="480"></iframe>
+[![Watch the video](https://github.com/achampigny4/ReadMeGenerator/blob/master/assets/ReadMeGeneratorGIFVideo.gif?raw=true)](https://www.youtube.com/watch?v=g3ii2wMfKw0)
 
 ## Installation
 
