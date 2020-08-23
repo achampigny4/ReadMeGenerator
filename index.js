@@ -3,6 +3,7 @@ const fs = require("fs");
 const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+//to write user's readme.md
 const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
@@ -85,7 +86,3 @@ const init = async () => {
 
 // function call to initialize program
 init();
-
-//1. license render
-//2. badges render
-//3. review hw requirments
