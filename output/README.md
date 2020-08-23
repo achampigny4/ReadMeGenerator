@@ -4,7 +4,7 @@
   
   ## Description
   
-  help user's quickly create README.md files
+  quickly create markdown file for an app
   
   ## Table of Contents:
  
@@ -24,7 +24,7 @@
   
   ## Usage:
 
-  generate applications README.md
+  create README file
 
   ## Installation:
 
@@ -53,8 +53,8 @@
 
   Please contact me if you have any questions.
  
-  email: achampigny4@gmail.com
+  email: [achampigny4@gmail.com](achampigny4@gmail.com)
   
-  github: [achampigny4](www.github.com/achampigny4)
+  github: [achampigny4](https://www.github.com/achampigny4)
   
       
